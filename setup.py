@@ -7,7 +7,7 @@ import os
 from setuptools import setup, find_packages
 
 try:
-    with open('README.rst') as f:
+    with open('README.md') as f:
         readme = f.read()
 except IOError:
     readme = ''
@@ -24,7 +24,7 @@ version = next((line.split('=')[1].strip().replace("'", '')
                                               'notelate',
                                               '__init__.py'))
                 if line.startswith('__version__ = ')),
-               '0.0.1')
+               '0.0.3')
 
 setup(
     name="notelate",
@@ -36,6 +36,7 @@ setup(
     maintainer_email='punisuke-@outlook.jp',
     description='generate jupyter notebook/lab template via command line',
     long_description=readme,
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=_requires_from_file('requirements.txt'),
     license="MIT",

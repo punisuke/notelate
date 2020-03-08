@@ -43,7 +43,7 @@ class Notelate:
 
 def main():
     nl = Notelate()
-    if len(sys.argv) == 0:
+    if len(sys.argv) == 1:
         templat_name = 'basic'
         nl.copy_template(templat_name)
 
