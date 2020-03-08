@@ -28,9 +28,12 @@ Type "notelate list", then the installed templates are printed.
 ## Add your template
 
 There is two ways to add your original template
+
 1.Contribute to github
 You can contribute this module with [github](https://github.com/punisuke/notelate/)
+
 please add your notebook template to notelate/templates/ and raise pull requests.
+
 We are waiting your great template!
 
 2.Add your template to local folder
