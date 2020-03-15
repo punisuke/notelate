@@ -12,7 +12,7 @@ class Notelate:
         self.template_path = path + '\\templates\\'
         print('template folder is [{}]'.format(self.template_path))
 
-    def fetch_template(self, tempalte_name):
+    def fetch_template(self, template_name):
         base_url = ''
 
     def print_list(self, local=True):
@@ -46,6 +46,7 @@ def main():
     if len(sys.argv) == 1:
         templat_name = 'basic'
         nl.copy_template(templat_name)
+        return 1
 
     if sys.argv[1] == 'list':
         print('printing template list in local')
