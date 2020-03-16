@@ -24,33 +24,34 @@ version = next((line.split('=')[1].strip().replace("'", '')
                                               'notelate',
                                               '__init__.py'))
                 if line.startswith('__version__ = ')),
-               '0.0.3')
+               '0.0.4')
 
-setup(
-    name="notelate",
-    version=version,
-    url='https://github.com/punisuke/notelate',
-    author='punisuke',
-    author_email='punisuke-@outlook.jp',
-    maintainer='punisuke',
-    maintainer_email='punisuke-@outlook.jp',
-    description='generate jupyter notebook/lab template via command line',
-    long_description=readme,
-    long_description_content_type="text/markdown",
-    packages=find_packages(),
-    install_requires=_requires_from_file('requirements.txt'),
-    license="MIT",
-    classifiers=[
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'License :: OSI Approved :: MIT License',
-    ],
-    entry_points="""
-      # -*- Entry points: -*-
-      [console_scripts]
-      notelate = notelate.scripts.app:main
-    """,
-)
+if __name__ == '__main__':
+    setup(
+        name="notelate",
+        version=version,
+        url='https://github.com/punisuke/notelate',
+        author='punisuke',
+        author_email='punisuke-@outlook.jp',
+        maintainer='punisuke',
+        maintainer_email='punisuke-@outlook.jp',
+        description='generate jupyter notebook/lab template via command line',
+        long_description=readme,
+        long_description_content_type="text/markdown",
+        packages=find_packages(),
+        install_requires=_requires_from_file('requirements.txt'),
+        license="MIT",
+        classifiers=[
+            'Programming Language :: Python :: 2',
+                'Programming Language :: Python :: 2.7',
+                'Programming Language :: Python :: 3',
+                'Programming Language :: Python :: 3.3',
+                'Programming Language :: Python :: 3.4',
+                'License :: OSI Approved :: MIT License',
+        ],
+        entry_points="""
+            # -*- Entry points: -*-
+            [console_scripts]
+            notelate = notelate.scripts.app:main
+            """,
+    )
