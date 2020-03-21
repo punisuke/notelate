@@ -9,7 +9,7 @@ import warnings
 warnings.simplefilter("ignore")
 
 path_list = os.path.dirname(os.path.abspath(
-    __file__)) + './temp_paths.npy'
+    __file__)) + '/temp_paths.npy'
 
 
 class Notelate:

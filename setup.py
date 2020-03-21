@@ -24,7 +24,7 @@ version = next((line.split('=')[1].strip().replace("'", '')
                                               'notelate',
                                               '__init__.py'))
                 if line.startswith('__version__ = ')),
-               '0.0.4')
+               '0.0.5')
 
 if __name__ == '__main__':
     setup(

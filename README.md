@@ -36,9 +36,14 @@ please add your notebook template to notelate/templates/ and raise pull requests
 
 We are waiting your great template!
 
-2.Add your template to local folder
-you can simply put your notebook into local folder
-You can confirm the folder path by
+2.Add your template path
+With below command you can add your original template path
+
+```
+notelate add [template_folder]
+```
+
+and you can check the path is included
 
 ```
 notelate list

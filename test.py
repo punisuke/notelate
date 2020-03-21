@@ -6,7 +6,9 @@ commands = [
     'python setup.py sdist bdist_wheel',
     f'pip install  ./dist/notelate-{version}-py3-none-any.whl',
     'notelate',
+    'rm basic.ipynb',
     'notelate dark',
+    'rm dark.ipynb'
     'notelate list',
     'notelate add c:/',
 ]
